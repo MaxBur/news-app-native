@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "news-app",
-    "slug": "news-app",
+    "slug": "test-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2cf9d9f3-3ec5-4c99-aa42-232cc383abba"
+      }
+    },
+    "owner": "maxtk"
   }
 }
