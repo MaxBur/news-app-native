@@ -7,6 +7,7 @@ import { FullPostScreen } from "./FullPostScreen";
 import { TestScreen } from "./TestScreen";
 import { Header } from "../components/Header/Header";
 
+
 const Stack = createNativeStackNavigator();
 
 export const Navigation = () => {

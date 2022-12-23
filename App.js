@@ -3,9 +3,12 @@ import axios from 'axios';
 import React from 'react';
 import { View } from 'react-native';
 
-import { Navigation } from './screens/Navigation';
+import { NavigatetionMain } from './screens/NavigatetionMain';
+import { Router } from 'react-router-native';
 
 export default function App() {
 
-  return <Navigation />;
+  return (
+      <NavigatetionMain />
+  );
 }
