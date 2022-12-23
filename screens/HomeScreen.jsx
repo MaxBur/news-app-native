@@ -6,11 +6,15 @@ import {
   FlatList,
   RefreshControl,
   TouchableOpacity,
+  Pressable,
+  Text,
 } from "react-native";
 import axios from "axios";
 
 import Post from "../components/Post";
 import { Loading } from "../components/Loading";
+
+import { ButtonTo } from "../components/ButtonTo";
 
 export function HomeScreen({ navigation }) {
   const [items, setItems] = React.useState();
@@ -44,6 +48,9 @@ export function HomeScreen({ navigation }) {
 
   return (
     <View>
+      <Pressable onPress={() => navigation.navigate('TestScreen')}>
+          <ButtonTo title={'Перейти на тестовую'} />
+      </Pressable>
       <FlatList
         refreshControl={
           <RefreshControl refreshing={isLoading} onRefresh={fetchPosts} />

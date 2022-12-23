@@ -4,6 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { HomeScreen } from "./HomeScreen";
 import { FullPostScreen } from "./FullPostScreen";
+import { TestScreen } from "./TestScreen";
+import { Header } from "../components/Header/Header";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +22,11 @@ export const Navigation = () => {
           name="FullPost"
           component={FullPostScreen}
           options={{ title: "Статья" }}
+        />
+        <Stack.Screen
+          name="TestScreen"
+          component={TestScreen}
+          options={{ title: "Тестовая страница" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
